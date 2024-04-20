@@ -1,0 +1,72 @@
+.update-product form{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    border:var(--border);
+    padding:2rem;
+    max-width: 50rem;
+    margin:0 auto;
+}
+
+.update-product form .image-container{
+    margin-bottom: 2rem;
+}
+
+.main-image img{
+    height: 20rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.sub-image{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    margin:1rem 0;
+}
+
+.update-product form .image-container .sub-image img{
+    height: 5rem;
+    width: 9rem;
+    object-fit: contain;
+    padding:.5rem;
+    border:var(--border);
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.update-product form .image-container .sub-image img:hover{
+    transform: scale(1.1);
+}
+ 
+.update-product form .box{
+    width: calc(100% - 2rem);
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.8rem;
+    color:var(--black);
+    background-color: var(--light-bg);
+    margin:1rem 0;
+}
+
+.update-product form span{
+    font-size: 1.7rem;
+    color:var(--light-color);
+}
+ 
+.update-product form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+@media only screen and (max-width: 450px){
+
+    .option-btn{
+        width: calc(100% - 5rem);
+    }
+
+    .btn{
+        width: 100%;
+    }
+}
+ 
